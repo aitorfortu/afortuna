@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
 	// HOME
-	@GetMapping("/")
+	@GetMapping("")
 	public String home(final ModelMap modelo) {
 		modelo.put("view", "home/index");
 		return "_t/frame";
